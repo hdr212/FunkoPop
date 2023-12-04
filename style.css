@@ -1,18 +1,37 @@
 
 body {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgb(255, 255, 255);
+}
+
+.funkopelo-container {
+  position: relative;
+  width: 400px;
+  height: 120px;
+}
+
+.pelo {
+  position: absolute;
+  margin: 0 auto;
+  border-radius: 1px;
+  height: 120px;
+  width: 400px;
+  background-color: rgb(0, 0, 0);
 
 }
 
 .funko-container {
+  position: relative;
     width: 400px;
-    height: 500px;
-    background-color: #804a4a; 
+    height: 600px;
+    background-color: #804a4a;
 }
 
 .funkoeyes-container {
     position: relative;
     width: 400px;
-    background-color: red;
     height: 120px;
     top: 75px;
 }
@@ -26,6 +45,7 @@ body {
     height: 120px;
     width: 100px;
     background-color: rgb(255, 255, 255);
+    animation: cambioColorOjo 4s infinite; 
   }
   .black {  
     position: relative;
@@ -47,27 +67,244 @@ body {
   .funkonoise-container {
     position: relative;
     width: 400px;
-    background-color: rgb(233, 188, 188);
     height: 120px;
-    top: 100px;
+    top: 150px;
 }
 .black1 {  
-    position: relative;
+    position: absolute;
     margin: 0 auto;
-    top: 35px;
+    left: 0;
+    right: 0;
     border-radius: 200px;
     height: 25px;
     width: 20px;
     background-color: rgb(80, 44, 44);
-    left: 50px;
+    left: 30px;
+
   } 
-  .black2 {  
-    position: relative;
+.black2 {  
+    position: absolute;
     margin: 0 auto;
-    top: 35px;
+    left: 0;
+    right: 0;
+    
     border-radius: 200px;
     height: 25px;
     width: 20px;
     background-color: rgb(80, 44, 44);
-    right: 50px;
+    right: 30px;
   } 
+  .moco {  
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    
+    border-radius: 200px;
+    height: 30px;
+    width: 10px;
+    background-color: rgb(114, 175, 43);
+    right: 30px;
+    top: 20px;
+    animation: movimientoMoco 4s infinite; 
+
+}
+    .funkocejas-container {
+    position: relative;
+    width: 400px;
+    height: 120px;
+    top: -60px;
+    }
+
+.ceja-izq {  
+    position: absolute;
+    height: 20px;
+    width: 90px;
+    margin: 0 auto;
+    left: -10px;
+    right: -10px;
+
+
+    border-radius: 20px;
+
+    background-color: rgb(0, 0, 0);
+    left: 110px;
+  } 
+  .ceja-der {  
+    position: absolute;
+    height: 20px;
+    width: 90px;
+    margin: 0 auto;
+    left: -10px;
+    right: -10px;
+    
+    
+    border-radius: 20px;
+    
+    background-color: rgb(0, 0, 0);
+    right: 110px;
+  }
+  .funkoboca-container {
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+
+    width: 400px;
+    height: 120px;
+    top: 80px;
+
+  }
+
+  .boca {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-radius: 150px;
+    height: 10px;
+    width: 150px;
+    background-color: rgb(0, 0, 0);
+    
+  }
+  .funkoperilla-container {
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 20px;
+    width: 400px;
+    height: 120px;
+
+  }
+  .black5 {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-radius: 150px;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(0, 0, 0);
+    left: 25px;
+
+  }
+  .black6 {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-radius: 150px;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(0, 0, 0);
+    right: 25px;
+  }
+  .black7 {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-radius: 150px;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(0, 0, 0);
+
+  }
+  .black8 {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-radius: 150px;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(0, 0, 0);
+    top: 15px;
+
+  }
+
+
+.funkopiernas-container { 
+    position: relative;
+    width: 400px;
+    height: 120px;
+
+}
+.piernaderecha {
+  position: absolute;
+  margin: 0 auto;
+  border-radius: 10px;
+  height: 270px;
+  width: 70px;
+  background-color: #804a4a;
+  right: 35px;
+  top: -10px
+}
+.piernaizquierda {
+  position: absolute;
+  margin: 0 auto;
+  border-radius: 10px;
+  height: 270px;
+  width: 70px;
+  background-color: #804a4a;
+  left: 35px;  
+  top: -10px;
+}
+.funkobrazos-container { 
+  position: relative;
+  width: 400px;
+  height: 120px;
+}
+.brazoderecha {
+  position: absolute;
+  margin: 0 auto;
+  border-radius: 6px;
+  height: 50px;
+  width: 170px;
+  background-color: #804a4a;
+  right: -155px;
+  top: -350px
+}
+.brazoizquierda {
+  position: absolute;
+  margin: 0 auto;
+  border-radius: 6px;
+  height: 50px;
+  width: 170px;
+  background-color: #804a4a;
+  left: -155px;  
+  top: -350px;
+}
+
+@keyframes movimientoMoco {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(40px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+}
+}
+
+@keyframes cambioColorOjo {
+  0%, 100% {
+    background-color: rgb(255, 255, 255);
+  }
+  50% {
+    background-color: rgb(255, 102, 102); 
+  }
+}
